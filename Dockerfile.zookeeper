@@ -1,0 +1,2 @@
+FROM zookeeper:3.4.13
+COPY zookeeper-healthcheck.sh /home/ic/

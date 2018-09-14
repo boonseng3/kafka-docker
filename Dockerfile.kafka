@@ -1,0 +1,5 @@
+FROM heavenhell81/ubuntu1604_openjdk8:20170418
+ADD binaries/kafka_2.11-2.0.0.tgz /home/ic/
+COPY kafka-healthcheck.sh /home/ic/
+COPY kafka-entrypoint.sh /home/ic/
+COPY binaries/server.properties /home/ic/kafka_2.11-2.0.0/config/
